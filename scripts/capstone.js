@@ -45,6 +45,8 @@ function createImage(index) {
     img.onload = () => resolve(img);
     img.onerror = () => reject(source);
     img.src = source;
+  }).catch((error) => {
+    console.error('Error loading image:', error);
   });
 }
 
