@@ -30,6 +30,7 @@ async function updateContent(clickedDiv, contentContainer) {
     contentContainer.innerHTML = ``;
     for (let i = 1; i <= 10; i++) {
       const image = await createImage(i);
+      console.log(typeof image)
       contentContainer.appendChild(image);
     }
     return;
