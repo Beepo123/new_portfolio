@@ -27,6 +27,11 @@ nav{
 
 .logo{
   width: 140px;
+  font-size: 30px;  
+}
+
+.logo span{
+  color: #ff004f;
 }
 
 nav ul li{
