@@ -38,7 +38,7 @@ async function updateContent(clickedDiv, contentContainer) {
   contentContainer.innerHTML = html;
 }
 
-function createImage(index) {
+async function createImage(index) {
   return new Promise((resolve, reject) => {
     const source = `images/implementation/${index}.jpg`;
     console.log(`index number ${index}`)
