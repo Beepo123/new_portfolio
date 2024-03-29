@@ -30,19 +30,16 @@ async function updateContent(clickedDiv, contentContainer) {
     contentContainer.innerHTML = ``;
     for (let i = 1; i <= 10; i++) {
       const image = await createImage(i);
-      console.log(typeof image)
       contentContainer.appendChild(image);
     }
     return;
   }
-
   contentContainer.innerHTML = html;
 }
 
 async function createImage(index) {
   return new Promise((resolve, reject) => {
-    const source = `images/implementation/${index}.jpg`;
-    console.log(`index number ${index}`)
+    const source = `../images/implementation/${index}.jpg`;
     const img = new Image();
     img.onload = () => resolve(img);
     img.onerror = () => reject(source);
