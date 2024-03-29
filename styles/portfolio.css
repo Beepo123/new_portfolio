@@ -1,0 +1,55 @@
+#portfolio{
+  padding: 50px 0;
+}
+
+.work-list{
+  display: grid;
+  margin-top: 50px;
+
+  grid-template-columns: repeat(6, 200px);
+  grid-auto-flow: column;
+
+  grid-gap: 20px;
+  overflow-x: scroll;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 290px;
+}
+
+.work{
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.work:hover img{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.work img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* styling scroll bar of projects  */
+.work-list::-webkit-scrollbar{
+  /* for some reason scroll bar style doesn't appear without margin */
+  margin-top: 20px; 
+}
+
+.work-list::-webkit-scrollbar-track{
+  background: hsl(120 75% 50% / 1);
+  border-radius: 20px;
+}
+.work-list::-webkit-scrollbar-thumb{
+  background: hsl(120 100% 20% / 1);
+  border-radius: 20px;
+}
+

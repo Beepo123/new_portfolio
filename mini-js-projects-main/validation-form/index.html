@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group name-div">
+        <label>Full Name</label>
+        <input class="name-input" type="text" placeholder="Enter your name">
+      </div>
+
+      <div class="input-group number-div">
+        <label>Phone No.</label>
+        <input class="number-input" type="tel" placeholder="123 456 7890">
+      </div>
+
+      <div class="input-group email-div">
+        <label>Email Id</label>
+        <input class="email-input" type="email" placeholder="Enter Email">
+      </div>   
+
+      <div class="input-group message-div">
+        <label>Your Message</label>
+        <textarea class="message-input" rows="5" placeholder="Enter your message"></textarea>
+        <div class="chars-remaining">30 chars left</div>
+      </div>
+
+      <button>Submit</button>
+   
+    </form>
+  </div>
+  <script src="validation.js"></script>
+</body>
+</html>

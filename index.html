@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d5b80c6a0f.js" crossorigin="anonymous"></script>
+
+    <!-- css styles -->
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/capstone.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- -------------header----------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a data-link="home">Home</a></li>
+            <li><a data-link="about">About</a></li>
+            <li><a data-link="capstone">Capstone</a></li>
+            <li><a data-link="portfolio">Portfolio</a></li>
+            <li><a data-link="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Bachelor's Degree in Computer Engineering</p>
+          <h1>Hi, I'm <span>Samuel</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------about----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about-me-image.jpg" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>With an enduring passion for software development and a lifelong fascination with computers, I've been driven by a love for mathematics to become a fast learner with strong problem-solving skills. From childhood, I've eagerly delved into the intricacies of technology, nurturing a deep curiosity for how systems operate. This enthusiasm fuels my relentless pursuit of mastering software development, as I continuously seek to innovate and create impactful solutions for the future.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links skills-tab active-link" onclick="opentab('skills')">skills</p>
+              <p class="tab-links experience-tab" onclick="opentab('experience')">experience</p>
+              <p class="tab-links education-tab" onclick="opentab('education')">education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Github</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <h1>OJT</h1>
+              <p>During the peak of the COVID-19 pandemic, securing an internship at tech companies proved challenging. Consequently, our school adapted by organizing campus-based internships to prioritize student safety. Although this meant deviating from applying theoretical programming knowledge, I embraced the opportunity to enhance my technical aptitude, particularly in hardware troubleshooting. Throughout the internship, I was tasked with managing the technical aspects of various school events, allowing me to develop valuable hands-on skills despite the unconventional circumstances.</p>
+            </div>
+            <div class="tab-contents" id="education">
+              2019-2023 <br />Bicol Univerisity Polangui Campus <br />Computer Engineering
+
+              <p style="margin-top: 20px">Award</p>
+              3rd Place in Bicol Univerisity Best Undergraduate Thesis
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------capstone----------- -->
+    <div id="capstone">
+      <div class="container">
+        <h1 class="sub-title">My Capstone</h1>
+        <h2 class="capstone-title">Solar Powered Dichromatic Lighting System</h2>
+        <p>This study focuses primarily on the development of solar streetlight design that incorporates two colors of light, namely white and yellow, complemented by an integrated emergency button and SMS alert system. The aim of this study was to enhance visibility in urban areas and provide a means for immediate assistance during emergencies.</p>
+        <div class="capstone-list">
+          <div class="prototype-div">
+            <i class="fa-solid fa-hammer"></i>
+            <h2>Prototype</h2>
+            <p>The output for the embeded system was used as a prototype of the final capstone device.</p>
+            <a>Learn more</a>
+          </div>
+          <div class="implementation-div">
+            <i class="fa-solid fa-code"></i>
+            <h2>Implementation</h2>
+            <p>Components are assembled, software is developed, and rigorous testing is conducted to ensure the device performs as intended.</p>
+            <a>Learn more</a>
+          </div>
+          <div class="output-div">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h2>Output</h2>
+            <p>The final output is the designed Solar Powered Adaptive Dichromatic Street Lighting Sytem that was tested to meet all the requirement and objectives from the design.</p>
+            <a>Learn more</a>
+          </div>
+        </div>
+        <div class="capstone-content-container"></div>
+      </div>
+    </div>
+
+    <!-- -------------Portfolio----------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <a href="mini-js-projects-main\calculator\calculator.html" target="_blank"><img src="mini-js-projects-main\images\calculator-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\password-generator\password-generator.html" target="_blank"><img src="mini-js-projects-main\images\password-generator-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\quiz\quiz.html" target="_blank"><img src="mini-js-projects-main\images\quiz-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\quote-generator\quote.html" target="_blank"><img src="mini-js-projects-main\images\quote-generator-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\todo-list-app\todo-list.html" target="_blank"><img src="mini-js-projects-main/images/todo-list-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\validation-form\index.html" target="_blank"><img src="mini-js-projects-main\images\validation-form-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\weather-app\weather-app.html" target="_blank"><img src="mini-js-projects-main\images\weather-app-icon.png" alt="" /></a>
+          </div>
+          <div class="work">
+            <a href="mini-js-projects-main\tictactoe-game\index.html" target="_blank"><img src="mini-js-projects-main\images\tictactoe.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>contact@example.com</p>
+            <p>+63934264241</p>
+            <div class="social-icons">
+              <a href="" class="fa fa-facebook"></a>
+              <a href="" class="fa fa-twitter-square"></a>
+              <a href="" class="fa fa-instagram"></a>
+              <a href="" class="fa fa-linkedin"></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="text" name="email" placeholder="Your email" required />
+              <textarea name="message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/general.js"></script>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/capstone.js"></script>
+  </body>
+</html>

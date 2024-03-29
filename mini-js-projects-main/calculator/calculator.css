@@ -1,0 +1,68 @@
+.main{
+    padding: 20px;
+    height: 500px;
+    width: 400px;
+    border: solid;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.upper-part{
+    display: flex;
+    margin-bottom: 20px;
+}
+.display{
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+}
+
+.lower-part{
+    display: flex;
+    column-gap: 10px;
+}
+
+.column{
+    flex: 1;
+}
+
+.col1,
+.col2,
+.col3{
+    display: grid;
+    row-gap: 20px;
+}
+
+.col4{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    row-gap: 20px;
+}
+
+.operations{
+    background-color: #b0bfc0;
+    color: #4f8096;
+}
+
+.number{
+    background-color: #3c606d;
+    color: white;
+}
+
+.equal{
+    background-color: #566247;
+    color: white;
+}
+
+button{
+    font-size: 20px;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}

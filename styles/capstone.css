@@ -1,0 +1,102 @@
+#capstone{
+  padding: 30px 0;
+}
+
+.capstone-title{
+  margin-top: 20px;
+}
+
+.capstone-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.capstone-list div{
+  background-color: #262626;
+  background-position: right center;
+
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  position: relative;
+
+  transition: background 0.5s, transform 0.5s, background-image 3s;
+}
+
+
+.capstone-list i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.capstone-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.capstone-list div a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.capstone-list div:hover{
+  background-position: top right;
+  background-size: 150px 180px;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  background-color: #ff004f;
+  transform: translateY(-20px);
+}
+.prototype-div:hover{
+  background-image: url(../images/prototype.png);
+}
+.implementation-div:hover{
+  background-image: url(../images/implementation.jpg);
+}
+.output-div:hover{
+  background-image: url(../images/output.png);
+}
+
+
+/* CAPSTONE CONTENT GENERATION */
+.capstone-content-container{
+  transition: transform 1s ease, height 1s ease;
+  transform: scaleY(0);
+}
+.capstone-content-active{
+  transform: scaleY(1);
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: white;
+  padding: 20px;
+  margin-top: 30px;
+  height: 70vh;
+}
+
+
+/* images inside capstone content div */
+.capstone-content-container img {
+  padding: 10px;
+  width: 20%;
+  height: 50%;
+  opacity: 0; /* Initially hide the images */
+  animation: fadeInUp 0.5s forwards; /* Apply the fadeInUp animation */
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%); /* Start position */
+    opacity: 0; /* Start opacity */
+  }
+  100% {
+    transform: translateY(0); /* End position */
+    opacity: 1; /* End opacity */
+  }
+}
