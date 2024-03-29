@@ -39,7 +39,7 @@ async function updateContent(clickedDiv, contentContainer) {
 
 async function createImage(index) {
   return new Promise((resolve, reject) => {
-    const source = `../images/implementation/${index}.jpg`;
+    const source = `images/implementation/${index}.jpg`;
     const img = new Image();
     img.onload = () => resolve(img);
     img.onerror = () => reject(source);
