@@ -5,3 +5,36 @@ html{
 .container{
   padding: 10px 10%;
 }
+
+@media screen and (max-width: 413px){ /*mobile view */
+  nav ul{
+    display: none;
+  }
+  nav .logo{
+    font-size: 50px;
+  }
+  .hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar, .hamburger::after, .hamburger::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  .hamburger.is-active, .bar{
+     
+  }
+}
