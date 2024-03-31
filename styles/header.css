@@ -30,6 +30,10 @@ nav{
   font-size: 30px;  
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 .logo span{
   color: #ff004f;
 }
