@@ -51,6 +51,10 @@ html{
     color: #ff004f;
   }
 
+  /* background image */
+  #header{
+    background-position: 65% 0%;
+  }
 
   /* -------about-------- */
 
@@ -104,7 +108,7 @@ html{
   /* -------contact-------- */
 
   #contact .column{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   #contact .contact-left{

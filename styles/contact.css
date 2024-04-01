@@ -1,12 +1,12 @@
 .column{
   display: flex;
-  justify-content: space-between;
 }
 
 /* -----------LEFT COLUMN----------- */
 
 .contact-left{
-  flex-basis: 35%;
+  flex: 1;
+  /* min-width: 360px; */
 }
 .contact-left p{
   margin-top: 15px;
@@ -51,7 +51,8 @@
 /* -----------RIGHT COLUMN----------- */
 
 .contact-right{
-  flex-basis: 60%;
+  flex: 1;
+  /* min-width: 280px; */
 }
 
 .contact-right form{
