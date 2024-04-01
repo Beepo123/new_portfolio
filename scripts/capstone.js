@@ -15,6 +15,7 @@ function handleClick(event) {
     } else {
       updateContent(clickedDiv, contentContainer);
     }
+    contentContainer.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 }
 
@@ -51,5 +52,4 @@ async function createImage(index) {
 
 function activateContentContainer(container) {
   container.classList.add("capstone-content-active");
-  container.scrollIntoView({ behavior: "smooth", block: "center" });
 }
