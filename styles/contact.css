@@ -1,5 +1,6 @@
 .column{
   display: flex;
+  max-width: 1200px;
 }
 
 /* -----------LEFT COLUMN----------- */

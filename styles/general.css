@@ -53,8 +53,9 @@ html{
   }
 
   /* background image */
-  #header{
-    background-position: 65% 0%;
+  #header.header{
+    background-size: 300px;
+    background-position: 50% 90%;
   }
 
   /* -------about-------- */
