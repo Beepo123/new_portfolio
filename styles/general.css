@@ -1,5 +1,6 @@
 html{
   margin-bottom: 1000px;
+  scroll-behavior: smooth;
 }
 
 .container{
